@@ -77,7 +77,7 @@
               <v-divider class="my-4"></v-divider>
               <h3 class="font-weight-medium">Fundraiser Members</h3>
               <v-row class="mt-4">
-                <v-col md="6">
+                <v-col md="6" cols="12">
                   <div class="d-flex align-center">
                     <div class="dp dp--one d-flex justify-center align-center">
                       HJ
