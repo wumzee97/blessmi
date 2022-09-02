@@ -48,7 +48,7 @@
             <v-tab>Rewards</v-tab>
             <v-tab>Comments</v-tab>
 
-            <v-tab-item class="pa-6">
+            <v-tab-item v-for="i in 4" :key="i" class="pa-6">
               <div class="d-flex justify-space-between">
                 <h3 class="font-weight-medium">Updates</h3>
 
