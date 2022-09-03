@@ -221,7 +221,7 @@
           >
             <p class="p-12 mb-0 light--text font-weight-bold">STERLING BANK</p>
             <h3 class="white--text font-weight-bold">
-              0046748389 <img src="~/static/assets/copy.svg" alt="" />
+              0046748389 <img style="cursor: pointer;" @click="copyText" src="~/static/assets/copy.svg" alt="" />
             </h3>
             <p class="p-12 mb-0 white--text font-weight-bold">
               Gbolahan Fawale
@@ -271,6 +271,12 @@
 <script>
 export default {
   name: 'IndexPage',
+  methods: {
+    copyText(){
+      navigator.clipboard.writeText('0046748389')
+      this.$toast.success('Account number copied successfully', 'Copied!', {position: 'topRight'})
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
